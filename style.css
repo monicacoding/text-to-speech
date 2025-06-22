@@ -5,17 +5,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body, .hero {
+    background: #F7FAFC;
+    color: #22223B;
+}
+
 .hero {
     width: 100%;
     min-height: 100vh;
-    background: #333446;
-    color: #EAEFEF;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-    
+
 .hero h1 {
     font-size: 45px;
     font-weight: 500;
@@ -24,7 +27,7 @@
 }
 
 .hero h1 span {
-    color: #71C0BB;
+    color: #3A8A86;
 }
 
 textarea {
@@ -34,11 +37,77 @@ textarea {
     margin-bottom: 30px;
 
     font-size: 15px;
-    color: 333446;
+    color: #22223B;
 
-    border: none;
+    border: 2px solid #3A8A86; /* More saturated border */
     border-radius: 10px;
 
-    background: #EAEFEF;
+    background: #FFFFFF; /* Slightly lighter than .hero */
     resize: none;
+
+    box-shadow: 0 4px 16px 0 rgba(58,138,134,0.10); /* Subtle shadow */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+    border-color: #22223B; /* Even more contrast on focus */
+    box-shadow: 0 4px 24px 0 rgba(58,138,134,0.18);
+    outline: none;
+}
+
+.row {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 30px;
+
+    border: none;
+    border-radius: 35px;
+
+    background: #3A8A86;
+
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+button img {
+    width: 12px;
+    margin-right: 10px;
+}
+
+button:hover, button:focus {
+    background: #22223B;
+    color: #FFFFFF;
+}
+
+select {
+    appearance: none;
+    
+    color: #22223B;
+    background: #E6F0EF;
+    background-image: url(assets/dropdown.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: center;
+    
+
+    border: 2px solid #B5C9CA;
+    border-radius: 35px;
+
+    flex: 1;
+    height: 50px;
+    padding: 0px 20px;
+
 }
