@@ -4,6 +4,8 @@
 
 This project is a simple and modern web application that converts user-inputted text into spoken words using the browser's built-in Speech Synthesis API. Users can enter any text, select from available voices, and listen to the spoken output directly in their browser.
 
+![image](https://github.com/user-attachments/assets/2894269c-2b5d-4e0c-ba94-6cb3ad8376e3)
+
 ## Features
 
 - Clean, accessible, and responsive user interface.
