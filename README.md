@@ -40,4 +40,7 @@ Make sure your browser supports the [Web Speech API](https://developer.mozilla.o
 
 This app works best in modern browsers such as Chrome, Edge, and Firefox. Voice availability may vary depending on the browser and operating system.
 
+---
+
+**Text to Speech** is open source and MIT licensed. Contributions and suggestions are welcome!
 
